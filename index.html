@@ -3,20 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <title>EcoCity Dashboard</title>
-  <link rel="stylesheet" href="style.css">gi
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* 🌿 Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      color: #1e3c72;
+    }
+
+    .container {
+      text-align: center;
+      max-width: 1000px;
+      padding: 40px;
+      background: rgba(255,255,255,0.8);
+      border-radius: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    h1 {
+      font-size: 4rem;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: #1e5f74;
+    }
+
+    .tagline {
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: #3a7ca5;
+    }
+
+    .subtag {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 40px;
+    }
+
+    .dashboard-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      border-radius: 20px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+      background: linear-gradient(135deg, #38f9d7, #43e97b);
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 3rem;
+      }
+      .tagline {
+        font-size: 1.2rem;
+      }
+      .subtag {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
 </head>
-<body class="home">
+<body>
   <div class="container">
     <h1>EcoCity</h1>
     <p class="tagline">Smarter • Greener • Safer Cities</p>
     <p class="subtag">All city services in one smart dashboard</p>
 
     <div class="dashboard-buttons">
-      <a href="waste.html" class="card">Smart Waste Management</a>
-      <a href="traffic.html" class="card">Traffic & Mobility</a>
-      <a href="energy.html" class="card">Energy & Water Monitoring</a>
-      <a href="issues.html" class="card">Civic Issues / Reporting</a>
-      <a href="about.html" class="card">About / Contact</a>
+      <a href="waste.html" class="card">♻️ Smart Waste Management</a>
+      <a href="traffic.html" class="card">🚦 Traffic & Mobility</a>
+      <a href="energy.html" class="card">💡 Energy & Water Monitoring</a>
+      <a href="issues.html" class="card">🛠 Civic Issues / Reporting</a>
+      <a href="about.html" class="card">📞 About / Contact</a>
     </div>
   </div>
 </body>

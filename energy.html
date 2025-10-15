@@ -3,16 +3,95 @@
 <head>
   <meta charset="UTF-8">
   <title>Energy & Water Monitoring</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #f0f4f8, #d9f0ff);
+      color: #1e3c72;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 30px;
+    }
+
+    .split {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      width: 100%;
+      max-width: 800px;
+    }
+
+    .card {
+      flex: 1 1 300px;
+      background: linear-gradient(135deg, #43e97b, #38f9d7);
+      color: #fff;
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px) scale(1.03);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+    }
+
+    .card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 1rem;
+      color: #f0f0f0;
+    }
+
+    .back-btn {
+      display: inline-block;
+      margin-top: 40px;
+      padding: 12px 25px;
+      background: #1e5f74;
+      color: #fff;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: background 0.3s, transform 0.3s;
+    }
+
+    .back-btn:hover {
+      background: #3a7ca5;
+      transform: translateY(-3px);
+    }
+
+    @media (max-width: 600px) {
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  </style>
 </head>
-<body class="energy">
+<body>
   <h2>Energy & Water Monitoring</h2>
   <div class="split">
-    <div>
-      <h3>Solar Energy Today: 120 kWh ☀️</h3>
+    <div class="card">
+      <h3>☀️ Solar Energy Today</h3>
+      <p>120 kWh</p>
     </div>
-    <div>
-      <h3>Water Saved: 5000 L 💧</h3>
+    <div class="card">
+      <h3>💧 Water Saved</h3>
+      <p>5000 L</p>
       <p>Leakage alerts: 3</p>
     </div>
   </div>

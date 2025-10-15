@@ -1,0 +1,200 @@
+/* 🌿 GLOBAL STYLES */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f8fa;
+  color: #1e5f74;
+}
+
+/* 🌆 HOME PAGE */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.container {
+  max-width: 700px;
+  background: white;
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Headings */
+h1 {
+  margin-bottom: 10px;
+  font-size: 2.5em;
+  letter-spacing: 1px;
+  color: #1e5f74;
+}
+
+.tagline {
+  font-weight: 600;
+  font-size: 1.2em;
+  margin-bottom: 5px;
+  color: #2c7a7b;
+}
+
+.subtag {
+  color: #666;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+/* Buttons as Cards */
+.dashboard-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  display: block;
+  background: #1e5f74;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  background: #238c9c;
+  transform: translateY(-4px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .dashboard-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 🚦 TRAFFIC PAGE */
+.page {
+  background: #f5f8fa;
+  font-family: 'Poppins', sans-serif;
+  color: #1e5f74;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.page-container {
+  max-width: 900px;
+  margin: auto;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.subtitle {
+  color: #666;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+/* STAT CARDS */
+.stats-section {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.card {
+  background: #1e5f74;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+/* CHART PLACEHOLDER */
+.chart-section {
+  text-align: center;
+}
+
+.chart-placeholder {
+  background: #eef5f7;
+  border-radius: 10px;
+  padding: 40px;
+  color: #555;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  display: inline-block;
+  margin-top: 30px;
+  background: #1e5f74;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.back-btn:hover {
+  background: #238c9c;
+}
+
+/* 📝 CIVIC ISSUES / REPORTING FORM */
+.form-section {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.form-section h2 {
+  margin-bottom: 15px;
+  color: #1e5f74;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #333;
+}
+
+form input, form select, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.submit-btn {
+  display: inline-block;
+  background: #1e5f74;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background: #238c9c;
+}
